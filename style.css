@@ -1,0 +1,85 @@
+
+body {
+	background-color: #000B1B;
+	color: white;
+	font-family: Copperplate;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: white;
+	transition: color 200ms ease-in;
+}
+
+/* pseudo selector - user interacts */
+
+a:hover {
+	color: #FFF38B;
+}
+
+img {
+	width: 100%;
+}
+
+/* id and class selector*/
+
+#container {
+	min-width: 320px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+/* nested selector */
+
+#header ul {
+	display: flex;
+}
+
+#header li {
+	margin-left: 1em;
+}
+
+#header a {
+	font-stretch: 1.5em;
+}
+
+#portfolio {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+.project {
+	border: 2px solid white;
+	padding: 1em;
+	background-color: transparent;
+	transition: background-color 200ms ease-in;
+}
+
+.project:hover {
+	background-color: white;
+}
+
+.project a {
+	font-size: 1.25em;
+}
+
+/* about */
+
+#portrait {
+	width: 200px;
+	float: right;
+}
