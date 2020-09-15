@@ -32,8 +32,6 @@ function draw () {
   arc(180, 110, 140, 148, 0, 0.75 * Math.PI);
   arc(195, 80, 180, 120, 0, 0.75 * Math.PI);
 
-
-
   //Eyebrows
   stroke(21, 19, 19);
   strokeWeight(3);
