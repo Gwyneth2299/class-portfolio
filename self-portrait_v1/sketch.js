@@ -14,7 +14,7 @@ function draw () {
   //Hair
   noStroke()
   fill(32, 19, 19);
-  arc(260, 270, 300, 490, QUARTER_PI + HALF_PI, QUARTER_PI, OPEN);
+  arc(260, 270, 300, 460, QUARTER_PI + HALF_PI, QUARTER_PI, OPEN);
 
   //Face 
   noStroke()
