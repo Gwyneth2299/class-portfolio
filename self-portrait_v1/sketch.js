@@ -11,61 +11,61 @@ function setup() {
 function draw () {
 	background('white');
 
-	 //Hair
+  //Hair
   noStroke()
   fill(32, 19, 19);
-  arc(260, 260, 300, 380, QUARTER_PI + HALF_PI, QUARTER_PI, OPEN);
+  arc(260, 270, 300, 490, QUARTER_PI + HALF_PI, QUARTER_PI, OPEN);
 
   //Face 
   noStroke()
-  fill(247, 221, 212);
-  ellipse(260, 255, 200, 260);
+  fill('#ffcb9a');
+  ellipse(260, 210, 200, 260);
 
   //Ears
-  arc(150, 265, 40, 60, 0, PI + HALF_PI, PI + HALF_PI, OPEN);
-  arc(370, 265, 40, 60, 0, PI + PI + HALF_PI, OPEN)
+  arc(150, 235, 40, 60, 0, PI + HALF_PI, PI + HALF_PI, OPEN);
+  arc(370, 235, 40, 60, 0, PI + PI + HALF_PI, OPEN)
 
   //Bang
   noStroke()
   fill(32, 19, 19);
-  arc(300, 150, 150, 100, 0, PI + QUARTER_PI, CHORD);
-  arc(180, 120, 140, 148, 0, 0.75 * Math.PI);
+  arc(310, 130, 130, 105, 0, PI + HALF_PI, CHORD);
+  arc(180, 110, 140, 148, 0, 0.75 * Math.PI);
+  arc(195, 80, 180, 120, 0, 0.75 * Math.PI);
+
 
 
   //Eyebrows
   stroke(21, 19, 19);
   strokeWeight(3);
   noFill();
-  arc(210, 235, 45, 15, PI, TWO_PI, OPEN);
-  arc(310, 235, 45, 15, PI, TWO_PI, OPEN);
+  arc(210, 190, 45, 15, PI, TWO_PI, OPEN);
+  arc(310, 190, 45, 15, PI, TWO_PI, OPEN);
 
   //Eyeshadow
-  stroke(249, 67, 6, 130);
+  stroke(62, 19, 19, 220);
   strokeWeight(6);
-  arc(210, 255, 45, 15, PI, TWO_PI, OPEN);
-  arc(310, 255, 45, 15, PI, TWO_PI, OPEN);
-  arc(210, 257, 40, 30, HALF_PI, PI);
-  arc(310, 257, 40, 30, 0, HALF_PI);
+  arc(207, 225, 55, 35, PI, TWO_PI, OPEN);
+  arc(315, 225, 55, 35, PI, TWO_PI, OPEN);
 
   //Eyes
   strokeWeight(1)
   fill(32, 19, 19);
-  ellipse(210, 260, 28, 25);
-  ellipse(310, 260, 28, 25);
+  ellipse(220, 225, 30, 30);
+  ellipse(325, 225, 30, 30);
 
   //Eyeballs
   noStroke()
   fill(255)
-  ellipse(207, 252, 8, 8);
-  ellipse(306, 252, 8, 8);
+  ellipse(217, 220, 8, 8);
+  ellipse(317, 220, 8, 8);
 
   //Nose
-  fill(247, 221, 155, )
-  triangle(260, 270, 270, 300, 250, 300);
+  fill('#fdbc85')
+  triangle(260, 230, 270, 280, 250, 280);
 
   //Mouth
-  fill(255, 102, 102);
-  arc(260, 325, 49, 35, 0, PI);
+  fill('#f28865');
+  arc(260, 298, 49, 35, 0, PI);
 
   //Hoodie
   rectMode(CENTER)
@@ -82,6 +82,8 @@ function draw () {
 
 
   //Neck
-  fill(247, 221, 212)
-  rect(260, 380, 50, 55, 20);
+  fill('#ffcb9a')
+  rect(260, 350, 50, 55, 20);
+
+
 }
