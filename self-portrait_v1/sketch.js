@@ -23,7 +23,7 @@ function draw () {
 
   //Ears
   arc(150, 235, 40, 60, 0, PI + HALF_PI, PI + HALF_PI, OPEN);
-  arc(370, 235, 40, 60, 0, PI + HALF_PI, PI + HALF_PI, OPEN);
+  arc(370, 235, 40, 60, 0, PI + PI, HALF_PI + PI);
 
   //Bang
   noStroke()
