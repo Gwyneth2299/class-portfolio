@@ -85,5 +85,4 @@ function draw () {
   fill('#ffcb9a')
   rect(260, 350, 50, 55, 20);
 
-
 }
