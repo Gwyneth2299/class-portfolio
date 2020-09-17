@@ -2,37 +2,31 @@
     debug exercise
 */
 
-var x = 300;
-var y = 100;
+var faceSize = 300;
+var x = 350;
+var y = 250;
 
 function setup() {
     createCanvas(640, 480);
 }
 
 function draw () {
-    backGround(50);
-
-    // face
+    background(50);
     noStroke();
     fill('lightblue');
-    ellipse(350, 320, x); 
+    ellipse(350, 320, faceSize); // face
 
-    // right eye
     fill(0, 0, 0);
-    ellipse (450, 250, 100); 
+    ellipse (450, 250, 100); // right eye
+    ellipse(x, y, 100); // left eye
+    ellipse(x, y + 150, 100, 50); // mouth
 
-    // left eye
-    ellipse(x, y, 100); 
-
-    // mouth
-    ellipse(x, y + 100, 100, 50); 
-
-    fill(white);
+    fill('white');
     ellipse(150, 100, 200, 150);
     triangle(200, 200, 150, 175, 175, 150);
 
-    fill("black");
+    fill('black');
     textSize(28);
-    textFont(monospace);
-    text("Nice work!" 65, 110);
+    textFont('Monospace');
+    text('Nice work!', 65, 110);
 }
