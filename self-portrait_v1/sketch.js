@@ -65,21 +65,8 @@ function draw () {
   fill('#f28865');
   arc(260, 298, 49, 35, 0, PI);
 
-  //Hoodie
-  rectMode(CENTER)
-  fill(255, 153, 202)
-  rect(260, 470, 205, 150, 20);
-  fill(255, 204, 229)
-  triangle(135, 435, 170, 360, 330, 470);
-  triangle(360, 380, 390, 460, 200, 435);
-  fill(255)
-  ellipse(300, 432, 15, 15);
-  ellipse(220, 432, 15, 15);
-  rect(300, 460, 8, 65, 20);
-  rect(220, 460, 8, 65, 20);
-
-
   //Neck
+  rectMode(CENTER)
   fill('#ffcb9a')
   rect(260, 350, 50, 55, 20);
 
