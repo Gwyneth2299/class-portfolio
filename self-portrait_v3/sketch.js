@@ -17,6 +17,12 @@ let spot = {
   size: 20
 };
 
+let col = {
+  r: 218,
+  g: 47,
+  b: 67,
+}
+
 let extraCanvas;
 
 function setup() {
