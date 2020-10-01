@@ -7,6 +7,10 @@
 var x = 200; // statement
 var y = 200;
 
+let r;
+let g;
+let b;
+
 let spot = {
   x: 50,
   y: 50,
