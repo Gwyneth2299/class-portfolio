@@ -7,6 +7,13 @@
 var x = 200; // statement
 var y = 200;
 
+let spot = {
+  x: 50,
+  y: 50,
+  size: 20
+};
+
+let extraCanvas;
 
 function setup() {
 
@@ -15,6 +22,26 @@ function setup() {
 
 function draw () {
 	background('white');
+
+    //mouse circle
+  fill(255, 192, 203, 70)
+  noStroke();
+  circle(mouseX, mouseY, 50)
+
+   // //call extraCanvas to appear
+  // image(extraCanvas, 0, 0);
+
+  //bg dots
+  spot.x = random(0, width);
+  spot.y = random(0, 350);
+  spot.size = random(5, 80);
+  col.r = random(111, 59);
+  col.g = random(72, 15);
+  col.b = random(209, 166);
+  fill(col.r, col.g, col.b);
+  noStroke();
+  // extraCanvas.circle(spot.x, spot.y, spot.size);
+  circle(spot.x, spot.y, spot.size);
 
   //Hair
   noStroke()
