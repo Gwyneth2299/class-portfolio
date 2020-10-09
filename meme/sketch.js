@@ -26,7 +26,8 @@ function draw() {
 	fill('red');
 	stroke(255);
 	strokeWeight(10);
-	textStyle(ITALIC); textAlign(CENTER)
+	textStyle(ITALIC); 
+	textAlign(CENTER)
 	text('Omae wa mou SHINDEIRU', width / 2, height - 300);
 
 }

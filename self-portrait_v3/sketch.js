@@ -72,14 +72,15 @@ function draw () {
   //Eyes
   strokeWeight(1)
   fill(32, 19, 19);
-  ellipse(x + 20, y + 25, 30, 30);
-  ellipse(x + 125, y + 25, 30, 30);
+  var mx = map(mouseX, 0, width, -20, 0);
+  ellipse(x + 20 + mx, y + 25, 30, 30);
+  ellipse(x + 125 + mx, y + 25, 30, 30);
 
-  //Eyeballs
+  //Highlight
   noStroke()
   fill(255)
-  ellipse(x + 17, y + 20, 8, 8);
-  ellipse(x + 117, y + 20, 8, 8);
+  ellipse(x + 17 + mx, y + 20, 8, 8);
+  ellipse(x + 121 + mx, y + 20, 8, 8);
 
   //Nose
   fill('#fdbc85')

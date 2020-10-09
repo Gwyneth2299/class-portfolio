@@ -56,11 +56,11 @@ function draw () {
   ellipse(x + 20, y + 25, 30, 30);
   ellipse(x + 125, y + 25, 30, 30);
 
-  //Eyeballs
+  //Highlight
   noStroke()
   fill(255)
   ellipse(x + 17, y + 20, 8, 8);
-  ellipse(x + 117, y + 20, 8, 8);
+  ellipse(x + 121, y + 20, 8, 8);
 
   //Nose
   fill('#fdbc85')
