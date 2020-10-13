@@ -103,5 +103,7 @@ function draw () {
   strokeWeight(2); 
   textAlign(CENTER)
   text('Move the mouse to paint her background', width / 2, height - 300);
+  textSize(20);
+  text('(Beware, she is watching)', width / 2, height - 270);
 
 }
