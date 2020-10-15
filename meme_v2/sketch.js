@@ -18,6 +18,14 @@ function setup() {
 function draw() {
 	background('red');
 
+	textSize(20);
+	fill('white');
+	stroke(255);
+	strokeWeight(2);
+	textStyle(ITALIC); 
+	textAlign(CENTER)
+	text('Press anywhere on the red box (if you dare)', width / 2, height / 2);
+
 	//image
 	if (mouseIsPressed) {
 		image(memeImage, 0, 0, width, height);
