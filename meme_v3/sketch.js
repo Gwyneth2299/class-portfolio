@@ -4,7 +4,6 @@
 	text + images
 */
 
-//var memeImage;
 
 var x = 0;
 var y = 0;
@@ -30,10 +29,6 @@ function draw() {
 	textStyle(ITALIC); 
 	textAlign(CENTER)
 	text('Press anywhere on the red box (if you dare)', width / 2, height / 2);
-
-	//image
-	// if (mouseIsPressed) {
-	// image(memeImage, x, y, width, height);
 
 	//image intensifies
 	if (mouseIsPressed) {
