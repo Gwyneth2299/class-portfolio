@@ -1,7 +1,6 @@
 /*
 	pattern version 1
 	javascript loops
-
 */
 
 function setup() {
@@ -9,7 +8,7 @@ function setup() {
 	pattern();
 }
 
-function mouseIsPressed() {
+function mousePressed() {
 	pattern();
 }
 
@@ -29,7 +28,7 @@ function pattern() {
 		noStroke();
 		let y = random(50, 200);
 		let w = random(200, 300);
-		triangle(x, height, x + 50, y, x + 100, height);
+		rect(x, height - 250, x + 100, height);
 	}
 
 	//trees
