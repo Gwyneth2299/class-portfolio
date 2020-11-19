@@ -8,12 +8,19 @@
 var goose;
 var cymbals;
 var jazz;
+var gooseSound;
+var bgSound;
+var gooseImage;
+var cymbalImage;
+var jazzImage;
 
 function preload() {
 goose = loadSound('goose.mp3');
 cymbals = loadSound('cymbals.wav');
 jazz = loadSound('jazz.mp3');
-
+gooseImage = loadImage('goose.png');
+cymbalImage = loadImage('cymbal.png');
+jazzImage = loadImage('jazz.png');
 }
 
 function setup() {
@@ -29,11 +36,28 @@ var y = 100;
 var s = 100;
 var d = dist(x, y, mouseX, mouseY);
 
-button(100, 100, 100, goose);
-button(500, 100, 100, cymbals);
+// "screen"
+fill('lightblue');
+noStroke();
+rect(145, 55, 350, 250);
 
-//rectButton(100, 300, 100, 50);
-rectButton(300, 300, 150, 50, jazz);
+button(80, 180, 80, goose);
+button(560, 180, 80, cymbals);
+
+// rectButton(100, 300, 100, 50);
+rectButton(520, 300, 75, 30, jazz);
+
+// Images
+
+	if (goose.isPlaying()) {
+		image(gooseImage, random(200,300), random(100, 200), 150, 65);
+	}
+	if (cymbals.isPlaying()) {
+		image(cymbalImage, random(200, 300), random(100, 200), 155, 65);
+	}
+	if (jazz.isPlaying()) {
+		image(jazzImage, random(200, 300), random(100, 200), 155, 65);
+	}
 }
 
 function rectButton(x, y, w, h, sound) {
@@ -79,22 +103,3 @@ fill('plum');
 }
 ellipse(x, y, s);
 }
-
-/*
-
-// circle button
-fill('plum')
-var d = dist(100, 100, mouseX, mouseY);
-if (d < 50) {
-fill('yellow');
-}
-circle(100, 100, 100);
-
-// rect button
-fill('plum');
-if (mouseX > 400 && mouseY < 500 && mouseY > 100 && mouseY < 150) {
-fill('yellow');
-}
-rect(400, 100, 100, 50);
-
-*/
