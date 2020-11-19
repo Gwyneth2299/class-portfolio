@@ -58,6 +58,12 @@ rectButton(520, 300, 75, 30, jazz);
 	if (jazz.isPlaying()) {
 		image(jazzImage, random(200, 300), random(100, 200), 155, 65);
 	}
+	textSize(30);
+  fill('plum');
+  stroke(255);
+  strokeWeight(2); 
+  textAlign(CENTER)
+  text('Press the buttons and see what happens', width / 2, 40);
 }
 
 function rectButton(x, y, w, h, sound) {
