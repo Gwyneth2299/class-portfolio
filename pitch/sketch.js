@@ -70,7 +70,7 @@ function draw() {
 		textSize(50);
 		text('The graphics include meme Patrick that will appear if you accidentally click on the red circle.', 50, 100, width - 100);
 
-		rect(200, 200, 600, 350);
+		rect(200, 200, 600, 500);
 	}
 
 	// draw buttons
