@@ -56,21 +56,22 @@ function draw() {
 		// describe the graphics
 		textAlign(LEFT);
 		fill(255);
-		textSize(50);
+		textSize(30);
 		text('The graphics include white and red circles.', 50, 100, width - 100);
 
 		fill(100);
 		rect(200, 200, 600, 400);
 		fill('white');
-		circle(width/2, height/2, 100);
+		circle(width/2, 350, 100);
 	} else if (currentSlide == 5) {
 		// describe the graphics
 		textAlign(LEFT);
 		fill(255);
-		textSize(50);
+		textSize(30);
 		text('The graphics include meme Patrick that will appear if you accidentally click on the red circle.', 50, 100, width - 100);
 
-		rect(200, 200, 600, 500);
+		fill(100);
+		rect(200, 200, 600, 400);
 	}
 
 	// draw buttons
