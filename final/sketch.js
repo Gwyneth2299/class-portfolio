@@ -8,6 +8,7 @@ var score = 0;
 var time = 0;
 var endtime = 600;
 var gameOver = false;
+var circleColor = 'white';
 //var music;
 //var endmusic;
 
@@ -37,8 +38,7 @@ function setup() {
 
 function draw() {
   background(r,g,b);
-  fill(random('white', 'red'));
-  ellipse(x ,y ,100);
+  ellipse(x ,y , 100);
 
   // "try again" screen
   if (time >= endtime) {
@@ -46,8 +46,8 @@ function draw() {
   fill('white');
   text("Score: " + score, 10, 100);
   text("Press the ENTER key to try again!", 10, 60); 
-
-   if (!gameOver) {
+  }
+  if (!gameOver) {
   /*image(memeImage, x, y, width, height);
    x += random(-3, 3);
    y += random(-3, 3);
@@ -59,7 +59,6 @@ function draw() {
   textAlign(CENTER)
   text('Omae wa mou SHINDEIRU', width / 2, height - 300);
   */
-  }
   gameOver = true;
   } else {
   time ++;
@@ -91,10 +90,12 @@ function mousePressed() {
     } else {
       reset();
     } 
-
-  /*
-    add if statement for when red ellipse is clicked 
-  */  
+  var r = random(1);
+  if (r > 0.5) {
+    circleColor = 'white';
+    } else {
+    circleColor = 'red';
+  } 
   }
 
 }
