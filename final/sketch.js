@@ -45,17 +45,28 @@ function draw() {
   background(r,g,b);
   fill(circleColor);
   ellipse(x ,y , 100);
+
+  // instructions
+  textSize(25);
+  fill(255);
+  textAlign(LEFT);
+  text('Press only the white circle and avoid the red one', 10, 25);
+  textSize(25);
+  fill('red');
+  text('unless you want Patrick to come after you', 10, 55);
+
+  // condition for when red circle is clicked
   if (redCircleClicked) {
-  image(memeImage, patX, patY, width, height);
+  image(memeImage, patX, patY, width + 50, height + 50);
    patX += random(-2, 2);
-   //patY += random(-3, 0);
   textSize(40);
   fill('red');
   stroke(255);
   strokeWeight(6);
   textStyle(ITALIC); 
-  textAlign(CENTER)
+  textAlign(CENTER);
   text('Omae wa mou SHINDEIRU', width / 2, height - 300);
+  text('Hit Enter key to restart', width / 2, height - 200);
   }  
 
   // "try again" screen
@@ -69,7 +80,7 @@ function draw() {
 function reset() {
   redCircleClicked = false;
   time = 0;
-  score = 0;
+  noStroke();
   update();
 }
 
