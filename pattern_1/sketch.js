@@ -14,22 +14,33 @@ function mousePressed() {
 	pattern();
 }
 
+//function draw() {
+
+	
+
 function pattern() {
 	background('#1F2F5D');
 
-	// mountains
-	for (let x = random(-200); x < width; x += random(100, 200)) {
-		// brown
-		let r = random(50, 82);
-		let g = random(40, 65);
-		let b = random(30, 51);
-		fill(r, g, b); 
-		noStroke();
-		let y = random(50, 200);
-		let w = random(200, 300);
-		triangle(x, height, x + w/2, y, x + w, height);
-	}
+	//buildings
+	fill('#E4786C');
+	noStroke();
+	quad(0, 0, 150, 100, 150, 360, 0, 360);
+	quad(550, 100, 640, 100, 640, 360, 550, 360);
+	fill('#9D625C');
+	quad(500, 200, 550, 100, 550, 360, 500, 360);
 
+	// lights
+	circle(0, 10, 10);
+
+	for (let x = 0; x < width; x += 20) {
+		let r = random(0,200);
+		let g = random(0,200);
+		let b = random(0,200);
+
+	}
+	
+
+/*
 	// trees
 	for (let x = 0; x < width; x += random(5, 100)) {
 		fill('rosybrown');
@@ -48,12 +59,11 @@ function pattern() {
 		let treeHeight = random(treeWidth, treeWidth * 2);
 		ellipse(x, height - y - h/2, treeWidth, treeHeight);
 	}
-
+*/
 
 	// snow
 	//var snow = random(3, 10);
 	for (let x = 0; x < width; x += 20) {
-		// let x = random(width);
 		let y = random(350);
 		let w = random(10, 7);
 		let h = random(10, 7);
